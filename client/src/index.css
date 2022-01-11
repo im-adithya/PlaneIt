@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Basic';
+  src: url(./assets/ProductSans.ttf);
+}
+
+@font-face {
+  font-family: 'Mono';
+  src: url(./assets/AzeretMono.ttf);
+}
+
+:root {
+  --monday: #29ABE2;
+  --tuesday: #39CB44;
+  --wednesday: #ED4034;
+  --thursday: #FFC300;
+  --friday: #FF7BAC;
+  --saturday: #9B46A9;
+  --sunday: #1B859E;
+}
+
+body {
+  margin: 0;
+  font-family: 'Basic' !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
