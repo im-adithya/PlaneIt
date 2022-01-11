@@ -10,13 +10,13 @@ const CopyLink = () => {
         <span className="copyheadline mr-2 d-none d-sm-inline">
           Planeit Link:
         </span>
-        plane-it.web.app/fly
+        planeee-it.herokuapp.com/fly
       </div>
       <div className="d-flex">
         <div
           className="copybtn pointer mr-2"
           onClick={() => {
-            navigator.clipboard.writeText("https://plane-it.web.app/fly");
+            navigator.clipboard.writeText("https://planeee-it.herokuapp.com/fly");
             setCopied(true);
             setTimeout(() => {
               setCopied(false);
