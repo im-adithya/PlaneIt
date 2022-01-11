@@ -19,7 +19,7 @@ export const AuthProvider = ({ children }) => {
   const [scheduleLoading, setscheduleLoading] = useState(true);
 
   useEffect(async () => {
-    const user = JSON.parse(localStorage.getItem("user"));
+    const user = JSON.parse(localStorage.getItem("planeituser"));
     if (user) {
       setCurrentUser(user);
       axios.get("/api/schedule/" + user.email).then((res) => {

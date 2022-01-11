@@ -20,7 +20,7 @@ export const useLogin = () => {
         }
       )
       .then((res) => {
-        localStorage.setItem("user", JSON.stringify(res.data));
+        localStorage.setItem("planeituser", JSON.stringify(res.data));
         authContext.user.setCurrentUser(res.data);
         axios.get("/api/schedule/" + res.data.email).then((res) => {
           const data = res.status === 204 ? [] : res.data;
